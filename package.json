@@ -1,0 +1,24 @@
+{
+  "name": "nbr",
+  "version": "0.0.0",
+  "description": "A small package for manipulating phone numbers",
+  "main": "nbr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philku/nbr.git"
+  },
+  "keywords": [
+    "phone",
+    "number",
+    "node"
+  ],
+  "author": "Philip Kubin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philku/nbr/issues"
+  },
+  "homepage": "https://github.com/philku/nbr#readme"
+}
