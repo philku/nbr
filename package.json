@@ -2,14 +2,23 @@
   "name": "nbr",
   "version": "0.0.0",
   "description": "A small package for manipulating phone numbers",
-  "main": "nbr.js",
+  "main": "src/nbr.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "tsc",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp",
+    "prepublishOnly": "npm run-script build",
+    "postpublish": "tsc --build --clean"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/philku/nbr.git"
   },
+  "files": [
+    "out/**/*"
+  ],
   "keywords": [
     "phone",
     "number",
@@ -20,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/philku/nbr/issues"
   },
-  "homepage": "https://github.com/philku/nbr#readme"
+  "homepage": "https://github.com/philku/nbr#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.0",
+    "ts-node": "^10.5.0",
+    "@types/jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.6",
+    "typescript": "^4.5.5"
+  }
 }
