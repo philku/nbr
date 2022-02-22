@@ -2,7 +2,7 @@
   "name": "nbr",
   "version": "0.0.0",
   "description": "A small package for manipulating phone numbers",
-  "main": "src/nbr.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc",
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/philku/nbr.git"
   },
   "files": [
-    "out/**/*"
+    "dist/**/*"
   ],
   "keywords": [
     "phone",

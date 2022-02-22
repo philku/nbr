@@ -4,7 +4,7 @@
  * @param number
  * @return {{local: string, local_dashed: string, domestic: string, domestic_dashed: string, domestic_dotted: string, domestic_areaParentheses: string, domestic_areaSpaced: string, domestic_areaSpacedParentheses: string, international: string, international_dashed: string}}
  */
-const nbr = (number) => {
+export const nbr = (number) => {
   number = number.toString();         // Make it a string
   number = number.replace(/\D/g, "");  // Get rid of everything, except numbers
 
@@ -58,4 +58,4 @@ const nbr = (number) => {
   }
 };
 
-module.exports = nbr;
+export default nbr;
