@@ -1,7 +1,7 @@
 {
   "name": "nbr",
   "version": "0.0.2",
-  "description": "A small package for manipulating phone numbers",
+  "description": "A small typescript package for manipulating phone numbers",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
@@ -20,7 +20,9 @@
   "keywords": [
     "phone",
     "number",
-    "node"
+    "node",
+    "phonenumber",
+    "typescript"
   ],
   "author": "Philip Kubin",
   "license": "ISC",
