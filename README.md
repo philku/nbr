@@ -40,7 +40,7 @@ console.log(numbers)
 }
 ```
 
-## Partial Numbers
+### Partial Numbers
 
 It'll do what it can, and give null for the rest
 
